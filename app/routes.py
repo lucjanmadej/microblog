@@ -10,8 +10,8 @@ def index():
             'author': {'username': 'John'},
             'body': 'Beautiful Day in Portland!'
         },
-        {'author': {'username': 'Susan'},
-         'body': 'The Avengers movie was so cool!'
+        {   'author': {'username': 'Susan'},
+            'body': 'The Avengers movie was so cool!'
         }
     ]
-    return render_template('index.html', title='Home', user=user)
+    return render_template('index.html', title='Home', user=user, posts=posts)
